@@ -1,0 +1,29 @@
+.quartaParte{
+    height: 800px;
+    width: 100vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header {
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    margin-left: 12em;
+    margin-top: 4em;
+    gap: 2em;
+}
+
+.card {
+    width: 348px;
+    height: 400px;
+    background-color: rgb(79, 158, 79);
+    border-radius: 15px;
+    color: white;
+    -webkit-box-shadow: -3px 4px 21px -6px #000000; 
+    box-shadow: -3px 4px 21px -6px #000000;
+}
+
+

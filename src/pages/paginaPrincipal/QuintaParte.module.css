@@ -1,0 +1,48 @@
+.quintaParte {
+    background-image: url(/src/pages/images/bloco_final_image.svg);
+    height: 1030px;
+    width: 100%;
+    background-color: rgb(248, 244, 244);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position-x: right;
+    background-position-y: top;
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16em;
+    margin-bottom: 20em;
+}
+
+.body h1 {
+    font-size: 45px;
+    color: darkblue;
+    text-align: start;
+}
+
+.input {
+    display: flex;
+    gap: 1em;
+    margin-left: 2em;
+}
+.input input {
+    height: 45px;
+    width: 420px;
+    font-size: 20px;
+}
+
+.input button {
+    width: 80px;
+    color: white;
+    background-color: rgb(101, 200, 101);
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(101, 200, 101);
+}

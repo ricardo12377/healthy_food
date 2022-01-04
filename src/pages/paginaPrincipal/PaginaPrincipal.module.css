@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    height: 980px;
+    background-image: url(/src/pages/images/Illustration.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y:top ;
+    background-size: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo {
+    color: rgb(62, 153, 62);
+    font-size: 40px;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 1em;
+    align-items: center;
+}
+
+.lista li button {
+    width: 140px;
+    height: 60px;
+    color: rgb(79, 158, 79);
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+main {
+    width: 40%;
+    margin-top: 10em;
+}
+
+main h1 {
+    text-align: start;
+    width: 50%;
+    font-size: 60px;
+    margin-left: 5em;
+    color: rgb(0, 0, 117);
+}
+
+.input {
+    display: flex;
+    margin-left: 18em;
+    gap: 1em;
+    align-items: center;
+}
+
+.input input {
+    width: 400px;
+    margin-top: 2em;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid darkblue;
+    font-size: 20px;
+}
+
+.lupa {
+    background-color: rgb(110, 192, 110);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4em;
+    border-radius: 10px;
+}

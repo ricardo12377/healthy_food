@@ -1,0 +1,40 @@
+.terceiraParte {
+    height: 60%;
+    font-size: 25px;
+    background-image: url(/src/pages/images/bloco_services.svg);
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y: center;
+    background-size: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    margin-bottom: 16em;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.main h1 {
+    width: 600px;
+    font-size: 55px;
+    margin-right: 5em;
+}
+
+.main button {
+    width: 170px;
+    height: 70px;
+    background-color: rgb(79, 158, 79);
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-right: 28em;
+   
+}
