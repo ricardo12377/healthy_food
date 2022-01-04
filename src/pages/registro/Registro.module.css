@@ -1,0 +1,81 @@
+.container {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(171, 216, 103);
+}
+
+.form {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.form h1 {
+    color: rgb(171, 216, 103);
+    font-weight: bold;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    background-color: rgb(245, 240, 240);
+    border: 2px solid rgb(171, 216, 103);
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.linhaDois label {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.linhaUm label {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+button {
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(171, 216, 103);
+    border-radius: 15px;
+    background-color: rgb(171, 216, 103);
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        height: 1300px;
+    }
+    .form {
+        width: 650px;
+        height: 1000px;
+    }
+
+    .linhaUm {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .linhaDois {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}

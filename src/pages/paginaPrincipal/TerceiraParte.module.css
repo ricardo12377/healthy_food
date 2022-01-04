@@ -1,5 +1,5 @@
 .terceiraParte {
-    height: 60%;
+    height: 1100px;
     font-size: 25px;
     background-image: url(/src/pages/images/bloco_services.svg);
     background-repeat: no-repeat;
@@ -12,19 +12,17 @@
 }
 
 .main {
-    margin-bottom: 16em;
-    margin-right: 15%;
+    margin-right: 5em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: left;
+    width: 600px;
+    font-size: 30px;
 }
 
 .main h1 {
     width: 600px;
     font-size: 55px;
-    margin-right: 5em;
 }
 
 .main button {
@@ -34,7 +32,34 @@
     color: white;
     font-size: 20px;
     border: 1px solid white;
-    border-radius: 15px;
-    margin-right: 28em;
-   
+    border-radius: 15px;   
+}
+
+@media screen and (max-width: 800px) {
+    .terceiraParte {
+    
+    }
+}
+
+@media screen and (max-width: 1200px)  {
+    .terceiraParte{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-size: 60%;
+        background-position-y: top;
+        height: 535px;
+    }
+    .main {
+        padding-left: 24em;
+    }
+    .main h1 {
+        font-size: 25px;
+        width: 400px;
+    }
+
+    .main p {
+        font-size: 15px;
+        width: 400px;
+    }
 }

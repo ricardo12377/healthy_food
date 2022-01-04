@@ -20,7 +20,9 @@ function SegundaParte() {
                 <div className={style.primeiraLinha}>
 
                     <div className={style.card}>
-                        <img src={Foto1} className={style.foto}/>
+                       <div className={style.descricaoFoto}>
+                       <img src={Foto1} className={style.foto}/>
+                       </div>
                         <div className={style.descricao}>
                         <h4>Brocolli Salad With Bacon</h4>
                         <button>SEE RECIPE</button>
@@ -28,7 +30,9 @@ function SegundaParte() {
                     </div>
 
                     <div className={style.card}>
-                        <img src={Foto2} className={style.foto}/>
+                        <div className={style.descricaoFoto}>
+                            <img src={Foto2} className={style.foto} />
+                        </div>
                         <div className={style.descricao}>
                         <h4>Classic Beef Burgers</h4>
                         <button>SEE RECIPE</button>
@@ -39,7 +43,9 @@ function SegundaParte() {
                 <div className={style.primeiraLinha}>
 
                     <div className={style.card}>
+                        <div className={style.descricaoFoto}>
                         <img src={Foto3} className={style.foto}/>
+                        </div>
                         <div className={style.descricao}>
                         <h4>Classic Potato Salad</h4>
                         <button>SEE RECIPE</button>
@@ -47,7 +53,9 @@ function SegundaParte() {
                     </div>
 
                     <div className={style.card}>
+                        <div className={style.descricaoFoto}>
                         <img src={Foto4} className={style.foto}/>
+                        </div>
                         <div className={style.descricao}>
                         <h4>Cherry Cobbler on the Grill</h4>
                         <button>SEE RECIPE</button>

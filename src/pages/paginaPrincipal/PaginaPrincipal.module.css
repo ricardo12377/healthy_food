@@ -41,22 +41,22 @@ navbar {
     border-radius: 15px;
 }
 
-main {
+.main {
     width: 40%;
     margin-top: 10em;
 }
 
-main h1 {
+.main h1 {
     text-align: start;
     width: 50%;
     font-size: 60px;
-    margin-left: 5em;
+    margin-left: 2em;
     color: rgb(0, 0, 117);
 }
 
 .input {
     display: flex;
-    margin-left: 18em;
+    margin-left: 7em;
     gap: 1em;
     align-items: center;
 }
@@ -69,6 +69,7 @@ main h1 {
     display: flex;
     border: 2px solid darkblue;
     font-size: 20px;
+    padding-left: 0.5em;
 }
 
 .lupa {
@@ -80,4 +81,78 @@ main h1 {
     justify-content: center;
     margin-top: 2.4em;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+    
+    .container {
+        background-size: 80%;
+    }
+
+    navbar {
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista {
+        font-size: 15px;
+    }
+
+    .lista li button {
+        width: 90px;
+        margin-right: 1em;
+        font-size: 15px;
+        height: 40px;
+    }
+
+  .link {
+      cursor: pointer;
+  }
+   
+
+    .logo {
+        font-size: 15px;
+    }
+
+   .main {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .main h1 {
+       text-align: start;
+       width: 400px;
+       margin-top: 10em;
+       font-size: 40px;
+       margin-left: 7em;
+   }
+
+   .input input {
+       width: 300px;
+   }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .lista li {
+        font-size: 20px;
+    }
+
+    .main {
+        width: 700px;
+        height: 600px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .lupa {
+        width: 70px;
+    }
 }

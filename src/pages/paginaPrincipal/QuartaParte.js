@@ -17,29 +17,53 @@ function QuartaParte() {
                 <p>Vokalia and Consonantia, there live the blind texts</p>
             </header>
 
-           
-            <slider className={style.items}>
-                    <div className={style.card}>
+            <main className={style.fotos}>
+                <div className={style.card}>
+
+                    <div className={style.containerFoto}>
                         <img src={Image1} className={style.img}/>
-                        <h3>Quick-start guide to nuts seeds</h3>
-                        <div>Kevin Ibrahim</div>
                     </div>
-                    <div className={style.card}>
-                        <img className={style.img} src={Image2} />
+
+                    <div className={style.containerDescript}>
                         <h3>Nutrition: Tips for Improving Your Health</h3>
                         <div>Mike Jackson</div>
                     </div>
-                    <div className={style.card}>
-                        <img className={style.img} src={Image3} />
+
+                </div>
+
+                 <div className={style.card}>
+                    <div className={style.containerFoto}>
+                        <img src={Image2} className={style.img}/>
+                    </div>
+
+                    <div className={style.containerDescript}>
+                        <h3>Quick-start guide to nuts seeds</h3>
+                        <div>Kevin Ibrahim</div>
+                    </div>
+                </div>
+
+                <div className={style.card}>
+                    <div className={style.containerFoto}>
+                        <img src={Image3} className={style.img}/>
+                    </div>
+
+                    <div className={style.containerDescript}>
                         <h3>The top 10 benefits of eating healthy</h3>
                         <div>Bryan McGregor</div>
                     </div>
-                    <div className={style.card}>
-                        <img className={style.img} src={Image4} />
+                </div>
+
+                <div className={style.card}>
+                    <div className={style.containerFoto}>
+                        <img src={Image4} className={style.img}/>
+                    </div>
+
+                    <div className={style.containerDescript}>
                         <h3>Nutrition: Good fruits for you healthy</h3>
                         <div>Mike Jackson</div>
                     </div>
-            </slider>
+                </div>
+            </main>
            
 
         </div>

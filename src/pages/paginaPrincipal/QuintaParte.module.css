@@ -46,3 +46,25 @@
     border-radius: 15px;
     border: 2px solid rgb(101, 200, 101);
 }
+
+@media screen and (max-width: 800px) {
+
+    .quintaParte {
+        background-size: 70%;
+    }
+    .body {
+        margin: 0;
+        margin-left: 4em;
+        margin-top: 20em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .quintaParte {
+        background-size: 60%;
+    }
+
+    .body {
+       margin-top: 40em;
+    }
+}

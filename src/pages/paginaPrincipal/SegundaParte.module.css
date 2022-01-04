@@ -1,6 +1,6 @@
 .segundaParte {
     background-color: rgb(226, 224, 224);
-    height: 1100px;
+    height: 900px;
     width: 100%;
     font-size: 25px;
 }
@@ -14,19 +14,25 @@
 
 .cards {
     height: 70%;
-    margin-top: 4em;
 
 }
 
 .card {
     display: flex;
     border-radius: 10px;
-    -webkit-box-shadow: -3px 4px 21px -6px #000000; 
-    box-shadow: -3px 4px 21px -6px #000000;
+    align-items: center;
+    width: 600px;
+    background-color: aqua;
+    height: 267px;
 }
 
+.descricaoFoto {
+    width: 50%;
+    height: 100%;
+}
 .descricao {
-    width: 300px;
+    width: 50%;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -56,4 +62,47 @@
     align-items: center;
     gap: 2em;
     margin-top: 1em;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .segundaParte {
+        height: 1450px;
+    }
+
+    .primeiraLinha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+       
+        margin-right: 2em;
+    }
+
+    .descricao {
+         width: 50%;
+    }
+
+    .descricao button {
+        font-size: 15px;
+        width: 120px ;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .segundaParte {
+        height: 1600px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .primeiraLinha {
+        display: flex;
+        flex-direction: column;
+    }
+   
 }

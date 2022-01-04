@@ -5,17 +5,29 @@ import QuartaParte from './pages/paginaPrincipal/QuartaParte';
 import QuintaParte from './pages/paginaPrincipal/QuintaParte';
 import SegundaParte from './pages/paginaPrincipal/SegundaParte';
 import TerceiraParte from './pages/paginaPrincipal/TerceiraParte';
+import Registro from '../src/pages/registro/Registro'
+import {BrowserRouter as Router,Switch, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
-    <div className='container'>
-      <PaginaPrincipal />
-      <SegundaParte />
-      <TerceiraParte />
-      <QuartaParte />
-      <QuintaParte />
-      <Footer />
-    </div>
+    <Router className='container'>
+      
+
+      <Switch >
+        <Route exact path="/">
+        <PaginaPrincipal />
+        <SegundaParte />
+        <TerceiraParte />
+        <QuartaParte />
+        <QuintaParte />
+        <Footer />
+        </Route>
+
+        <Route path="/registro">
+          <Registro />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

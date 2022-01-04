@@ -2,6 +2,7 @@ import React from 'react'
 import style from './PaginaPrincipal.module.css'
 import {BsSearch} from 'react-icons/bs'
 import SegundaParte from './SegundaParte'
+import {Link} from 'react-router-dom'
 
 function PaginaPrincipal() {
     return (
@@ -16,12 +17,14 @@ function PaginaPrincipal() {
                     <li>BLOG</li>
                     <li>JOIN</li>
                     <li>
-                        <button>REGISTER</button>
+                        <Link to="/registro">
+                        <button className={style.link} >REGISTRO</button>
+                        </Link>
                     </li>
                </ul>
            </navbar>
 
-           <main>
+           <main className={style.main}>
                <h1>
                    Ready for Trying a new recipe?
                </h1>
