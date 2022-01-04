@@ -8,6 +8,8 @@ import {Link} from 'react-router-dom'
 
 function Registro() {
 
+    const [modal, setModal] = useState(false)
+
     const schema = yup.object({
         name: yup.string().required('O nome é obrigatório'),
         dataNascimento: yup.number().positive().required().typeError('A idade é obrigatória'),
@@ -109,10 +111,17 @@ function Registro() {
            </div>
 
                <div className={style.buttons}>
-               <button type="submit">Cadastrar</button>
+               <button type="submit" onClick={() => setModal(true)}>Cadastrar</button>
                 <Link to="/"><button>Voltar</button></Link>
-               </div>
+               </div>  
             </form>
+            {modal ? (
+                <div className={style.modal}>
+                    <h1>Boas vindas ao Healthy Food {localStorage.getItem('nome')}</h1>
+                    <Link to="/"><button className={style.buttonConcluir}>Concluir</button></Link>
+                </div>
+            ): null}
+           
         </div>
     )
 }

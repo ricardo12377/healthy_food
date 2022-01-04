@@ -17,10 +17,11 @@
     align-items: center;
     background-color: #fff;
     border-radius: 15px;
+    position: relative;
 }
 
 .form h1 {
-    color: rgb(171, 216, 103);
+    color: darkblue;
     font-weight: bold;
 }
 
@@ -56,6 +57,12 @@ button {
     background-color: rgb(171, 216, 103);
     color: white;
     font-size: 20px;
+    border: 2px solid darkblue;
+    color: darkblue;
+}
+
+.buttonConcluir {
+    color: darkblue;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,3 +86,21 @@ button {
         gap: 2em;
     }
 }
+
+.modal {
+    background-color: rgb(171, 216, 103);
+    border: 2px solid darkblue;
+    position: absolute;
+    height: 250px;
+    font-size: 12px;
+    color: darkblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal h1 {
+    width: 50%;
+}
+
